@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>In English Please</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/letter_e.png" alt="" width="95" height="90" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Репетиторы</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Стать репетитором</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Вопросы и ответы</a
+                >
+              </li>
+            </ul>
+
+            <div class="d-flex justify-content-evenly"></div>
+
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Поиск"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Поиск
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="intro" id="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <h1 class="intro__title">
+            Репетитор английского языка онлайн: прокачайте язык с опытным
+            учителем
+          </h1>
+          <h2 class="intro__subtitle">
+            Занятия с преподавателем английского онлайн – лучший способ выучить
+            язык быстро, в удобном вам темпе, и за подходящую цену
+          </h2>
+          <a class="bt-n btn--red" href="#">О нас</a>
+        </div>
+        <!-- /.intro__inner -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /#intro.intro -->
+
+    <div class="filters">
+      <div class="container position-relative">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Выберете город
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-dark"
+            aria-labelledby="dropdownMenuButton2"
+          >
+            <li><a class="dropdown-item active" href="#">Москва</a></li>
+            <li><a class="dropdown-item" href="#">Санкт-Петербург</a></li>
+            <li><a class="dropdown-item" href="#">Казань</a></li>
+          </ul>
+        </div>
+        <!-- /.dropdown -->
+        <div class="check check__training">
+          <h3 class="training-format">Формат</h3>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >У репетитора или ученика</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >У репетитора</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >У ученика</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >Дистанционно</label
+            >
+          </div>
+        </div>
+        <!-- /.check.check__training -->
+        <div class="range">
+          <h3><span id="w">Цена за час </span></h3>
+          <br />
+          500
+          <input
+            class="range__input"
+            type="range"
+            min="20"
+            max="120"
+            value="20"
+            onchange="getElementById('w1').innerHTML=this.value;"
+          />
+          5000
+        </div>
+        <!-- /.range -->
+        <div class="check check__status">
+          <h3 class="status">Статус</h3>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Студент</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >Аспирант</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >Школьный преподаватель</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >Преподаватель вуза</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >Частный преподаватель</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >Носитель языка</label
+            >
+          </div>
+        </div>
+        <!-- /.check.check__status -->
+        <div class="check check__experience">
+          <h3 class="work-experience">Стаж</h3>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >До года</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >1-5 лет</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >5-10 лет</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="flexSwitchCheckChecked"
+              checked
+            />
+            <label class="form-check-label" for="flexSwitchCheckChecked"
+              >Больше 10 лет</label
+            >
+          </div>
+        </div>
+        <!-- /.check.check__status -->
+        <div class="form-check check__sex">
+          <h3 class="sex">Пол</h3>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Мужской
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Женский
+          </label>
+        </div>
+
+        <div class="form-check check__age">
+          <h3 class="age">Возраст</h3>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            До 30 лет
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            30-50 лет
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            Старше 50 лет
+          </label>
+        </div>
+
+        <div
+          class="card mb-3 position-absolute top-0 start-50 translate-middle-x"
+          style="max-width: 540px"
+        >
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/teachers/photo_small.png" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><a href="card.html" target="blank">Никита Андреевич</a></h5>
+                <p class="card-text">
+                  2010 год - сдал высший международный Кембриджский экзамен Cambridge Certificate of Proficiency in English, подтверждающий уровень владения английским языком в совершенстве.2011-2013-й год - университет Роехэмптона, Великобритания. Повышение квалификации преподавателя.
+                </p>
+                <a href="#" class="btn btn-primary">Записаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card mb-3 position-absolute top-50 start-50 translate-middle"
+          style="max-width: 540px"
+        >
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/teachers/photo_small.png" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><a href="card.html" target="blank">Никита Андреевич</a></h5>
+                <p class="card-text">
+                  2010 год - сдал высший международный Кембриджский экзамен Cambridge Certificate of Proficiency in English, подтверждающий уровень владения английским языком в совершенстве.2011-2013-й год - университет Роехэмптона, Великобритания. Повышение квалификации преподавателя.
+                </p>
+                <a href="#" class="btn btn-primary">Записаться</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div
+          class="card mb-3 position-absolute bottom-0 start-50 translate-middle-x"
+          style="max-width: 540px"
+        >
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/teachers/photo_small.png" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Никита Андреевич</a></h5>
+                <p class="card-text">
+                  2010 год - сдал высший международный Кембриджский экзамен Cambridge Certificate of Proficiency in English, подтверждающий уровень владения английским языком в совершенстве.2011-2013-й год - университет Роехэмптона, Великобритания. Повышение квалификации преподавателя.
+                </p>
+                <a href="#" class="btn btn-primary">Записаться</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.filters -->
+        
+        <!-- /.footer__block -->
+        <div class="footer__block">
+          
+        <!-- /.footer__block -->
+        <div class="footer__block">
+          <h4 class="footer__title">About ActiveBox</h4>
+          <div class="footer__text">
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </div>
+        </div>
+        <!-- /.footer__block -->
+      </div>
+      <!-- /.footer__inner -->
+    </div>
+    <!-- /.container -->
+    <div class="copyright">
+      <div class="container">
+        <div class="copyright__text">
+          <div>Copyright © 2021 In English Pleace . All Rights Reserved</div>
+          <div>Mad <span>by Vasyanin Yakov</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- /.footer__copyright -->
+  </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
